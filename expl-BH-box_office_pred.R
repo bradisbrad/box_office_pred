@@ -10,9 +10,6 @@
 
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidyverse, tidyquant, tidytext, lubridate, odbc, rebus, gghighlight, DataExplorer, devtools)
-creds <- read_lines('C:/FW/credentials')
-github_auth <- creds[which(creds == 'github PAT:') + 1]
-devtools::install_github('bradisbrad/FW', subdir = 'fwfun', auth_token = github_auth)
 
 
 # Variable Initiation -----------------------------------------------------
